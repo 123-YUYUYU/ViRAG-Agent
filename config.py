@@ -36,7 +36,7 @@ CLIP_MODEL_NAME = "/root/autodl-tmp/hf_cache/clip-ViT-B-32/0_CLIPModel"  # 用�
 QWEN_VL_MODEL_NAME = "/root/autodl-tmp/hf_cache/qwen/Qwen2-VL-7B-Instruct"  # local backend 使用的本地 Qwen2-VL 模型路径或 HuggingFace 名称
 
 # qwen_api backend 配置
-QWEN_API_KEY_ENV = "DASHSCOPE_API_KEY"  # API Key 环境变量名；只从环境变量或 .env 读取，不要写入代码
+QWEN_API_KEY_ENV = "DASHSCOPE_API_KEY"  # API Key 环境变量名；只从环境变量或 .env 读取
 QWEN_API_BASE_URL = os.getenv(
     "QWEN_API_BASE_URL",
     "https://dashscope.aliyuncs.com/compatible-mode/v1"
