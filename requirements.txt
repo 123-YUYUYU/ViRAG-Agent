@@ -1,0 +1,22 @@
+--extra-index-url https://download.pytorch.org/whl/cu121
+
+torch
+torchvision
+torchaudio
+transformers>=4.45.0
+accelerate
+qwen-vl-utils
+tiktoken
+sentence-transformers
+pymupdf
+chromadb
+opencv-python-headless
+gradio
+pillow
+PyMuPDF
+rank-bm25
+jieba
+pytesseract
+dataclasses-json
+openai>=1.0.0
+python-dotenv>=1.0.0

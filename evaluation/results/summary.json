@@ -1,0 +1,9 @@
+{
+  "total_samples": 0,
+  "top1_retrieval_accuracy": 0.0,
+  "qa_accuracy": 0.0,
+  "hallucination_rate": 0.0,
+  "qa_correct_count": 0,
+  "qa_partial_count": 0,
+  "qa_wrong_count": 0
+}

@@ -1,0 +1,2126 @@
+[
+  {
+    "id": 1,
+    "question": "系统标配的AI视觉主机数量是多少？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_3.png",
+    "gold_page": "ADAS--20241202-v3.3_page_3.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_3.png"
+    ],
+    "gold_answer": "系统标配1台AI视觉主机。",
+    "acceptable_answers": [
+      "标配为1台AI视觉主机。",
+      "系统标配AI视觉主机1台。"
+    ],
+    "question_type": "visual_ocr",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "AI视觉主机",
+      "标配"
+    ],
+    "required_keypoints": [
+      "1台",
+      "AI视觉主机"
+    ],
+    "optional_keypoints": [
+      "标配"
+    ],
+    "answer_type": "number"
+  },
+  {
+    "id": 2,
+    "question": "工业防水显示器的尺寸是多少？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_3.png",
+    "gold_page": "ADAS--20241202-v3.3_page_3.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_3.png"
+    ],
+    "gold_answer": "工业防水显示器为7寸。",
+    "acceptable_answers": [
+      "工业防水显示器是7寸。",
+      "标配显示器尺寸为7寸。"
+    ],
+    "question_type": "visual_ocr",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "7寸",
+      "显示器",
+      "7"
+    ],
+    "required_keypoints": [
+      "7寸",
+      "工业防水显示器"
+    ],
+    "optional_keypoints": [
+      "标配"
+    ],
+    "answer_type": "number"
+  },
+  {
+    "id": 3,
+    "question": "系统标配几个红外摄像头？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_3.png",
+    "gold_page": "ADAS--20241202-v3.3_page_3.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_3.png"
+    ],
+    "gold_answer": "系统标配2个红外摄像头。",
+    "acceptable_answers": [
+      "标配红外摄像头2个。",
+      "系统包含2个红外摄像头。"
+    ],
+    "question_type": "visual_ocr",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "红外摄像头",
+      "2个"
+    ],
+    "required_keypoints": [
+      "2个",
+      "红外摄像头"
+    ],
+    "optional_keypoints": [
+      "标配"
+    ],
+    "answer_type": "number"
+  },
+  {
+    "id": 4,
+    "question": "系统最多支持扩展到几路摄像机？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_3.png",
+    "gold_page": "ADAS--20241202-v3.3_page_3.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_3.png"
+    ],
+    "gold_answer": "系统最多支持扩展到4路摄像机。",
+    "acceptable_answers": [
+      "最多可扩展到4路摄像机。",
+      "系统最多支持4路摄像机。"
+    ],
+    "question_type": "text_comprehension",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "4路摄像机"
+    ],
+    "required_keypoints": [
+      "4路摄像机"
+    ],
+    "optional_keypoints": [
+      "可选配",
+      "扩展"
+    ],
+    "answer_type": "number"
+  },
+  {
+    "id": 5,
+    "question": "配件清单中包含哪种天线？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_3.png",
+    "gold_page": "ADAS--20241202-v3.3_page_3.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_3.png"
+    ],
+    "gold_answer": "配件清单中包含三合一天线。",
+    "acceptable_answers": [
+      "配件清单包含三合一天线。",
+      "标配包含三合一天线。"
+    ],
+    "question_type": "visual_ocr",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "三合一天线"
+    ],
+    "required_keypoints": [
+      "三合一天线"
+    ],
+    "optional_keypoints": [
+      "配件清单",
+      "标配"
+    ],
+    "answer_type": "entity_list"
+  },
+  {
+    "id": 6,
+    "question": "如果需要倒车检测功能，需要额外购买什么设备？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_3.png",
+    "gold_page": "ADAS--20241202-v3.3_page_3.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_3.png",
+      "ADAS--20241202-v3.3_page_16.png"
+    ],
+    "gold_answer": "需要额外购买中间继电器。",
+    "acceptable_answers": [
+      "需要购买中间继电器。",
+      "倒车检测功能需要额外配中间继电器。"
+    ],
+    "question_type": "multi_hop_reasoning",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "倒车检测",
+      "中间继电器"
+    ],
+    "required_keypoints": [
+      "中间继电器"
+    ],
+    "optional_keypoints": [
+      "倒车检测功能",
+      "额外购买"
+    ],
+    "answer_type": "entity_list"
+  },
+  {
+    "id": 7,
+    "question": "购买倒车检测继电器时需要依据什么参数选择？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_3.png",
+    "gold_page": "ADAS--20241202-v3.3_page_3.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_3.png",
+      "ADAS--20241202-v3.3_page_16.png"
+    ],
+    "gold_answer": "需要根据倒车触发电压选择对应电压的继电器。",
+    "acceptable_answers": [
+      "按倒车触发电压选择对应电压的继电器。",
+      "依据车辆倒车信号/触发电压选择继电器。"
+    ],
+    "question_type": "text_comprehension",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "倒车触发电压",
+      "继电器"
+    ],
+    "required_keypoints": [
+      "倒车触发电压",
+      "对应电压",
+      "继电器"
+    ],
+    "optional_keypoints": [
+      "中间继电器"
+    ],
+    "answer_type": "text_comprehension"
+  },
+  {
+    "id": 8,
+    "question": "电源模块输出的两个12V电压分别供给哪些设备？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_4.png",
+    "gold_page": "ADAS--20241202-v3.3_page_4.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_4.png"
+    ],
+    "gold_answer": "两个12V电压分别给显示器和AI主机供电。",
+    "acceptable_answers": [
+      "电源模块两个12V输出分别给显示器和AI主机供电。",
+      "两个12V分别供显示器和AI主机。"
+    ],
+    "question_type": "multi_hop_reasoning",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "12V",
+      "显示器",
+      "AI主机"
+    ],
+    "required_keypoints": [
+      "两个12V电压",
+      "显示器",
+      "AI主机"
+    ],
+    "optional_keypoints": [
+      "电源模块"
+    ],
+    "answer_type": "visual_relation"
+  },
+  {
+    "id": 9,
+    "question": "开关信号盒通过什么接口与AI主机连接？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_4.png",
+    "gold_page": "ADAS--20241202-v3.3_page_4.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_4.png"
+    ],
+    "gold_answer": "开关信号盒通过CAN接口或RS485接口与AI主机连接。",
+    "acceptable_answers": [
+      "开关信号盒通过CAN或RS485接口连接AI主机。",
+      "与AI主机的CAN接口/RS485接口连接。"
+    ],
+    "question_type": "visual_relation",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "CAN",
+      "RS485"
+    ],
+    "required_keypoints": [
+      "开关信号盒",
+      "CAN接口",
+      "RS485接口",
+      "AI主机"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "visual_relation"
+  },
+  {
+    "id": 10,
+    "question": "开关信号盒另一侧快捷端子连接到什么设备？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_4.png",
+    "gold_page": "ADAS--20241202-v3.3_page_4.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_4.png"
+    ],
+    "gold_answer": "快捷端子连接车辆控制器或者电子油门。",
+    "acceptable_answers": [
+      "快捷端子连接车辆控制器或电子油门。",
+      "另一侧快捷端子接车辆控制器或者电子油门。"
+    ],
+    "question_type": "text_comprehension",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "车辆控制器",
+      "电子油门"
+    ],
+    "required_keypoints": [
+      "快捷端子",
+      "车辆控制器",
+      "电子油门"
+    ],
+    "optional_keypoints": [
+      "开关信号盒另一侧"
+    ],
+    "answer_type": "text_comprehension"
+  },
+  {
+    "id": 11,
+    "question": "WiFi、4G和GPS天线分别连接到哪里？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_4.png",
+    "gold_page": "ADAS--20241202-v3.3_page_4.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_4.png"
+    ],
+    "gold_answer": "WiFi、4G和GPS分别接入AI主机对应接口。",
+    "acceptable_answers": [
+      "WiFi、4G、GPS接入AI主机对应接口。",
+      "三合一天线分别连接主机对应接口。"
+    ],
+    "question_type": "visual_relation",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "WiFi",
+      "4G",
+      "GPS"
+    ],
+    "required_keypoints": [
+      "WiFi",
+      "4G",
+      "GPS",
+      "AI主机对应接口"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "visual_relation"
+  },
+  {
+    "id": 12,
+    "question": "两路摄像头方案中前后摄像头分别接入哪个接口？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_4.png",
+    "gold_page": "ADAS--20241202-v3.3_page_4.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_4.png"
+    ],
+    "gold_answer": "前摄像头接AHD5，后摄像头接AHD4。",
+    "acceptable_answers": [
+      "两路方案中前接AHD5，后接AHD4。",
+      "前摄像头连接AHD5，后摄像头连接AHD4。"
+    ],
+    "question_type": "visual_relation",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "AHD5",
+      "AHD4"
+    ],
+    "required_keypoints": [
+      "前摄像头",
+      "AHD5",
+      "后摄像头",
+      "AHD4"
+    ],
+    "optional_keypoints": [
+      "两路摄像头"
+    ],
+    "answer_type": "visual_relation"
+  },
+  {
+    "id": 13,
+    "question": "四路摄像头方案中右后摄像头接入哪个接口？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_4.png",
+    "gold_page": "ADAS--20241202-v3.3_page_4.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_4.png"
+    ],
+    "gold_answer": "右后摄像头接入AHD2接口。",
+    "acceptable_answers": [
+      "四路方案右后摄像头接AHD2。",
+      "右后摄像头连接AHD2接口。"
+    ],
+    "question_type": "visual_relation",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "右后",
+      "AHD2"
+    ],
+    "required_keypoints": [
+      "右后摄像头",
+      "AHD2"
+    ],
+    "optional_keypoints": [
+      "四路摄像头"
+    ],
+    "answer_type": "visual_relation"
+  },
+  {
+    "id": 14,
+    "question": "外置告警装置与主机的哪个接口连接？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_4.png",
+    "gold_page": "ADAS--20241202-v3.3_page_4.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_4.png"
+    ],
+    "gold_answer": "外置告警装置与主机SPEAKER接口连接。",
+    "acceptable_answers": [
+      "外置告警装置连接主机SPEAKER。",
+      "外置告警装置接SPEAKER接口。"
+    ],
+    "question_type": "visual_ocr",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "SPEAKER"
+    ],
+    "required_keypoints": [
+      "外置告警装置",
+      "SPEAKER接口"
+    ],
+    "optional_keypoints": [
+      "主机"
+    ],
+    "answer_type": "visual_relation"
+  },
+  {
+    "id": 15,
+    "question": "显示器通过什么线与主机连接？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_4.png",
+    "gold_page": "ADAS--20241202-v3.3_page_4.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_4.png"
+    ],
+    "gold_answer": "显示器通过HDMI线与主机连接。",
+    "acceptable_answers": [
+      "显示器通过HDMI线连接主机。",
+      "显示器和主机用HDMI线连接。"
+    ],
+    "question_type": "visual_ocr",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "HDMI"
+    ],
+    "required_keypoints": [
+      "显示器",
+      "HDMI线",
+      "主机"
+    ],
+    "optional_keypoints": [
+      "HDMI接口"
+    ],
+    "answer_type": "visual_relation"
+  },
+  {
+    "id": 16,
+    "question": "安装主机绝缘支架的第一步是什么？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_5.png",
+    "gold_page": "ADAS--20241202-v3.3_page_5.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_5.png"
+    ],
+    "gold_answer": "第一步是将主机滑入绝缘架凹槽，并使安装孔与主机固定孔外侧对齐。",
+    "acceptable_answers": [
+      "第一步将主机滑入绝缘架凹槽，并对齐安装孔和固定孔。",
+      "先把主机滑入绝缘架凹槽并对齐孔位。"
+    ],
+    "question_type": "process_steps",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "滑入绝缘架"
+    ],
+    "required_keypoints": [
+      "主机滑入绝缘架凹槽",
+      "安装孔与主机固定孔外侧对齐"
+    ],
+    "optional_keypoints": [
+      "第一步"
+    ],
+    "answer_type": "process_steps"
+  },
+  {
+    "id": 17,
+    "question": "安装绝缘支架时为什么必须使用绝缘支架？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_5.png",
+    "gold_page": "ADAS--20241202-v3.3_page_5.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_5.png"
+    ],
+    "gold_answer": "为了防止车身静电损坏主机。",
+    "acceptable_answers": [
+      "因为要防止车身静电损坏主机。",
+      "绝缘支架用于避免车身静电损坏主机。"
+    ],
+    "question_type": "text_comprehension",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "静电",
+      "损坏主机"
+    ],
+    "required_keypoints": [
+      "防止车身静电",
+      "损坏主机"
+    ],
+    "optional_keypoints": [
+      "绝缘支架"
+    ],
+    "answer_type": "text_comprehension"
+  },
+  {
+    "id": 18,
+    "question": "安装主机绝缘支架的第二步是什么？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_5.png",
+    "gold_page": "ADAS--20241202-v3.3_page_5.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_5.png"
+    ],
+    "gold_answer": "第二步是插入螺栓并拧紧螺母。",
+    "acceptable_answers": [
+      "第二步插入螺栓并拧紧螺母。",
+      "插入螺栓后拧紧螺母完成安装。"
+    ],
+    "question_type": "process_steps",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "螺栓",
+      "螺母"
+    ],
+    "required_keypoints": [
+      "插入螺栓",
+      "拧紧螺母"
+    ],
+    "optional_keypoints": [
+      "第二步"
+    ],
+    "answer_type": "process_steps"
+  },
+  {
+    "id": 19,
+    "question": "AI视觉主机建议安装在车辆什么位置？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_6.png",
+    "gold_page": "ADAS--20241202-v3.3_page_6.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_6.png"
+    ],
+    "gold_answer": "AI视觉主机建议安装在护顶后方。",
+    "acceptable_answers": [
+      "AI视觉主机建议装在护顶后方。",
+      "主机推荐安装于护顶后方位置。"
+    ],
+    "question_type": "spatial_structure",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "护顶后方"
+    ],
+    "required_keypoints": [
+      "AI视觉主机",
+      "护顶后方"
+    ],
+    "optional_keypoints": [
+      "顶部底部位置"
+    ],
+    "answer_type": "spatial_structure"
+  },
+  {
+    "id": 20,
+    "question": "安装主机时需要进行哪些环境防护？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_6.png",
+    "gold_page": "ADAS--20241202-v3.3_page_6.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_6.png"
+    ],
+    "gold_answer": "主机需要进行防雨和防水保护。",
+    "acceptable_answers": [
+      "主机需要防雨、防水保护。",
+      "安装时要对主机做防雨和防水。"
+    ],
+    "question_type": "text_comprehension",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "防雨",
+      "防水"
+    ],
+    "required_keypoints": [
+      "防雨",
+      "防水保护"
+    ],
+    "optional_keypoints": [
+      "工业车辆作业环境复杂"
+    ],
+    "answer_type": "entity_list"
+  },
+  {
+    "id": 21,
+    "question": "前摄像头优先推荐安装在哪里？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_6.png",
+    "gold_page": "ADAS--20241202-v3.3_page_6.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_6.png"
+    ],
+    "gold_answer": "前摄像头优先推荐安装在前方门架外侧。",
+    "acceptable_answers": [
+      "前摄像头优先安装在前方门架外侧。",
+      "前置摄像头首选前方门架外侧。"
+    ],
+    "question_type": "spatial_structure",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "前方门架外侧"
+    ],
+    "required_keypoints": [
+      "前摄像头",
+      "前方门架外侧"
+    ],
+    "optional_keypoints": [
+      "优先推荐"
+    ],
+    "answer_type": "spatial_structure"
+  },
+  {
+    "id": 22,
+    "question": "如果前方车架无法固定摄像头，次选安装位置是哪里？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_6.png",
+    "gold_page": "ADAS--20241202-v3.3_page_6.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_6.png"
+    ],
+    "gold_answer": "次选安装位置是护顶前上方左右两侧。",
+    "acceptable_answers": [
+      "次选为护顶前上方左右两侧。",
+      "如果车架无法固定，可装在护顶前上方两侧。"
+    ],
+    "question_type": "spatial_structure",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "护顶前上方"
+    ],
+    "required_keypoints": [
+      "护顶前上方左右两侧"
+    ],
+    "optional_keypoints": [
+      "前方车架无法固定",
+      "次选位置"
+    ],
+    "answer_type": "spatial_structure"
+  },
+  {
+    "id": 23,
+    "question": "为什么安装在护顶前上方时需要特别注意？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_6.png",
+    "gold_page": "ADAS--20241202-v3.3_page_6.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_6.png"
+    ],
+    "gold_answer": "因为前方车架可能遮挡摄像头视觉识别。",
+    "acceptable_answers": [
+      "因为前方车架可能遮挡摄像头识别。",
+      "需注意车架遮挡会影响视觉识别。"
+    ],
+    "question_type": "multi_hop_reasoning",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "遮挡",
+      "视觉识别"
+    ],
+    "required_keypoints": [
+      "前方车架",
+      "遮挡",
+      "摄像头视觉识别"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "multi_hop_reasoning"
+  },
+  {
+    "id": 24,
+    "question": "告警限速示意图中限速区的范围是多少？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_7.png",
+    "gold_page": "ADAS--20241202-v3.3_page_7.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_7.png",
+      "ADAS--20241202-v3.3_page_8.png"
+    ],
+    "gold_answer": "限速区范围为2-6米。",
+    "acceptable_answers": [
+      "限速区范围是2-6m。",
+      "限速区为2到6米。"
+    ],
+    "question_type": "visual_ocr",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "2-6m"
+    ],
+    "required_keypoints": [
+      "限速区",
+      "2-6m"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "number"
+  },
+  {
+    "id": 25,
+    "question": "告警区的距离范围是多少？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_7.png",
+    "gold_page": "ADAS--20241202-v3.3_page_7.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_7.png",
+      "ADAS--20241202-v3.3_page_9.png"
+    ],
+    "gold_answer": "告警区范围为6-8米。",
+    "acceptable_answers": [
+      "告警区范围是6-8m。",
+      "告警区为6到8米。"
+    ],
+    "question_type": "visual_ocr",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "6-8m"
+    ],
+    "required_keypoints": [
+      "告警区",
+      "6-8m"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "number"
+  },
+  {
+    "id": 26,
+    "question": "车辆前后两侧的告警区域是否对称？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_7.png",
+    "gold_page": "ADAS--20241202-v3.3_page_7.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_7.png"
+    ],
+    "gold_answer": "车辆前后两侧的告警区域是对称的。",
+    "acceptable_answers": [
+      "是，车辆前后两侧告警区域对称。",
+      "前后告警区域是对称的。"
+    ],
+    "question_type": "visual_relation",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "对称"
+    ],
+    "required_keypoints": [
+      "前后两侧",
+      "告警区域",
+      "对称"
+    ],
+    "optional_keypoints": [
+      "限速区",
+      "告警区"
+    ],
+    "answer_type": "yes_no"
+  },
+  {
+    "id": 27,
+    "question": "安装方式一中摄像头的FOV是多少？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_8.png",
+    "gold_page": "ADAS--20241202-v3.3_page_8.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_8.png"
+    ],
+    "gold_answer": "摄像头FOV为100度。",
+    "acceptable_answers": [
+      "摄像头FOV是100°。",
+      "安装方式一中摄像头视场角为100度。"
+    ],
+    "question_type": "visual_ocr",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "FOV",
+      "100°"
+    ],
+    "required_keypoints": [
+      "FOV",
+      "100°"
+    ],
+    "optional_keypoints": [
+      "摄像头"
+    ],
+    "answer_type": "number"
+  },
+  {
+    "id": 28,
+    "question": "安装方式一中四个方向的限速区范围是否一致？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_8.png",
+    "gold_page": "ADAS--20241202-v3.3_page_8.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_7.png",
+      "ADAS--20241202-v3.3_page_8.png"
+    ],
+    "gold_answer": "四个方向的限速区范围一致，均为2-6米。",
+    "acceptable_answers": [
+      "一致，四个方向限速区均为2-6m。",
+      "前后左右限速区范围相同，都是2-6米。"
+    ],
+    "question_type": "visual_relation",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "2-6m"
+    ],
+    "required_keypoints": [
+      "四个方向",
+      "限速区范围一致",
+      "2-6m"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "visual_relation"
+  },
+  {
+    "id": 29,
+    "question": "安装方式二中最外层区域叫什么？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_9.png",
+    "gold_page": "ADAS--20241202-v3.3_page_9.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_9.png"
+    ],
+    "gold_answer": "最外层区域叫告警区。",
+    "acceptable_answers": [
+      "安装方式二最外层是告警区。",
+      "最外层区域称为告警区。"
+    ],
+    "question_type": "visual_ocr",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "告警区"
+    ],
+    "required_keypoints": [
+      "最外层区域",
+      "告警区"
+    ],
+    "optional_keypoints": [
+      "安装方式二"
+    ],
+    "answer_type": "visual_ocr"
+  },
+  {
+    "id": 30,
+    "question": "安装方式二中最外层区域的距离范围是多少？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_9.png",
+    "gold_page": "ADAS--20241202-v3.3_page_9.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_7.png",
+      "ADAS--20241202-v3.3_page_9.png"
+    ],
+    "gold_answer": "最外层区域距离范围为6-8米。",
+    "acceptable_answers": [
+      "最外层区域范围为6-8m。",
+      "告警区距离范围是6到8米。"
+    ],
+    "question_type": "visual_ocr",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "6-8m"
+    ],
+    "required_keypoints": [
+      "最外层区域",
+      "6-8m"
+    ],
+    "optional_keypoints": [
+      "告警区"
+    ],
+    "answer_type": "number"
+  },
+  {
+    "id": 31,
+    "question": "开关信号盒触点电压范围是多少？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_10.png",
+    "gold_page": "ADAS--20241202-v3.3_page_10.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_10.png"
+    ],
+    "gold_answer": "触点电压范围为DC 0-80V。",
+    "acceptable_answers": [
+      "触点电压范围是DC 0-80V。",
+      "开关信号盒触点电压为0到80V直流。"
+    ],
+    "question_type": "visual_ocr",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "DC0-80V"
+    ],
+    "required_keypoints": [
+      "触点电压",
+      "DC 0-80V"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "number"
+  },
+  {
+    "id": 32,
+    "question": "开关信号盒最大触点电流是多少？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_10.png",
+    "gold_page": "ADAS--20241202-v3.3_page_10.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_10.png"
+    ],
+    "gold_answer": "最大触点电流为2.5A。",
+    "acceptable_answers": [
+      "最大触点电流是2.5A。",
+      "触点电流最大为2.5A。"
+    ],
+    "question_type": "visual_ocr",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "2.5A"
+    ],
+    "required_keypoints": [
+      "最大触点电流",
+      "2.5A"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "number"
+  },
+  {
+    "id": 33,
+    "question": "开关信号盒铭牌上关于GND有什么警告？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_10.png",
+    "gold_page": "ADAS--20241202-v3.3_page_10.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_10.png"
+    ],
+    "gold_answer": "GND严禁接到车体。",
+    "acceptable_answers": [
+      "铭牌警告GND严禁接到车体。",
+      "GND不能接到车体。"
+    ],
+    "question_type": "visual_ocr",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "GND"
+    ],
+    "required_keypoints": [
+      "GND",
+      "严禁接到车体"
+    ],
+    "optional_keypoints": [
+      "铭牌警告"
+    ],
+    "answer_type": "visual_ocr"
+  },
+  {
+    "id": 34,
+    "question": "模拟油门电压调节涉及哪四根线？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_10.png",
+    "gold_page": "ADAS--20241202-v3.3_page_10.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_10.png",
+      "ADAS--20241202-v3.3_page_13.png",
+      "ADAS--20241202-v3.3_page_14.png"
+    ],
+    "gold_answer": "涉及VERY、OUT2、YM2和GND四根线。",
+    "acceptable_answers": [
+      "模拟油门电压调节涉及VERY、OUT2、YM2和GND。",
+      "四根线为VERY、OUT2、YM2、GND。"
+    ],
+    "question_type": "visual_relation",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "VERY",
+      "OUT2",
+      "YM2",
+      "GND"
+    ],
+    "required_keypoints": [
+      "VERY",
+      "OUT2",
+      "YM2",
+      "GND"
+    ],
+    "optional_keypoints": [
+      "模拟油门电压调节"
+    ],
+    "answer_type": "entity_list"
+  },
+  {
+    "id": 35,
+    "question": "继电器信号包含哪三个接口标识？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_10.png",
+    "gold_page": "ADAS--20241202-v3.3_page_10.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_10.png",
+      "ADAS--20241202-v3.3_page_11.png"
+    ],
+    "gold_answer": "继电器信号包含NO、COM OUT1和NC YM1。",
+    "acceptable_answers": [
+      "继电器信号包含NO、COM OUT1、NC YM1。",
+      "三个接口标识是NO、COM OUT1和NC YM1。"
+    ],
+    "question_type": "visual_relation",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "NO",
+      "COM OUT1",
+      "NC YM1"
+    ],
+    "required_keypoints": [
+      "NO",
+      "COM OUT1",
+      "NC YM1"
+    ],
+    "optional_keypoints": [
+      "继电器信号"
+    ],
+    "answer_type": "entity_list"
+  },
+  {
+    "id": 36,
+    "question": "绿色COM OUT1与黄色NC YM1接入时是什么状态？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_11.png",
+    "gold_page": "ADAS--20241202-v3.3_page_11.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_10.png",
+      "ADAS--20241202-v3.3_page_11.png"
+    ],
+    "gold_answer": "绿色COM OUT1与黄色NC YM1接入时为常闭状态。",
+    "acceptable_answers": [
+      "绿COM OUT1与黄NC YM1接入时为常闭。",
+      "绿色COM OUT1和黄色NC YM1接入是常闭状态。"
+    ],
+    "question_type": "text_comprehension",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "常闭"
+    ],
+    "required_keypoints": [
+      "绿色COM OUT1",
+      "黄色NC YM1",
+      "常闭状态"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "text_comprehension"
+  },
+  {
+    "id": 37,
+    "question": "限速告警时黄绿触点会发生什么变化？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_11.png",
+    "gold_page": "ADAS--20241202-v3.3_page_11.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_10.png",
+      "ADAS--20241202-v3.3_page_11.png"
+    ],
+    "gold_answer": "限速告警时黄绿触点会由常闭变为常开。",
+    "acceptable_answers": [
+      "限速告警时黄绿由常闭变常开。",
+      "黄绿触点在告警限速时变为常开。"
+    ],
+    "question_type": "multi_hop_reasoning",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "常闭",
+      "常开"
+    ],
+    "required_keypoints": [
+      "黄绿触点",
+      "限速告警",
+      "常闭变常开"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "multi_hop_reasoning"
+  },
+  {
+    "id": 38,
+    "question": "蓝绿触点在限速告警时会变为什么状态？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_11.png",
+    "gold_page": "ADAS--20241202-v3.3_page_11.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_10.png",
+      "ADAS--20241202-v3.3_page_11.png"
+    ],
+    "gold_answer": "蓝绿触点在限速告警时会由常开变为常闭。",
+    "acceptable_answers": [
+      "蓝绿触点在限速告警时由常开变常闭。",
+      "限速告警时蓝绿从常开变成常闭。"
+    ],
+    "question_type": "multi_hop_reasoning",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "常开",
+      "常闭"
+    ],
+    "required_keypoints": [
+      "蓝绿触点",
+      "限速告警",
+      "常开变常闭"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "multi_hop_reasoning"
+  },
+  {
+    "id": 39,
+    "question": "继电器信号常见接入哪些微动开关？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_11.png",
+    "gold_page": "ADAS--20241202-v3.3_page_11.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_11.png"
+    ],
+    "gold_answer": "常见接入座椅开关、手刹/脚刹开关、安全带开关、电子油门踏板和电池推出信号等。",
+    "acceptable_answers": [
+      "常见接入座椅开关、手刹/脚刹开关、安全带开关、电子油门踏板、电池推出信号等。",
+      "可接入座椅、手刹/脚刹、安全带、电子油门踏板、电池推出信号等微动开关。"
+    ],
+    "question_type": "visual_ocr",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "座椅开关",
+      "安全带"
+    ],
+    "required_keypoints": [
+      "座椅开关",
+      "手刹/脚刹开关",
+      "安全带开关",
+      "电子油门踏板",
+      "电池推出信号"
+    ],
+    "optional_keypoints": [
+      "微动开关"
+    ],
+    "answer_type": "entity_list"
+  },
+  {
+    "id": 40,
+    "question": "以座椅开关为例，应该串入哪两根线？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_11.png",
+    "gold_page": "ADAS--20241202-v3.3_page_11.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_10.png",
+      "ADAS--20241202-v3.3_page_11.png"
+    ],
+    "gold_answer": "应串入黄线NC-YM1和绿线COM-OUT1。",
+    "acceptable_answers": [
+      "以座椅开关为例，应串入黄线NC-YM1和绿线COM-OUT1。",
+      "需要把黄线NC YM1和绿线COM OUT1串入。"
+    ],
+    "question_type": "process_steps",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "黄线",
+      "绿线"
+    ],
+    "required_keypoints": [
+      "黄线NC-YM1",
+      "绿线COM-OUT1"
+    ],
+    "optional_keypoints": [
+      "座椅开关",
+      "串入"
+    ],
+    "answer_type": "visual_relation"
+  },
+  {
+    "id": 41,
+    "question": "电子油门限速接线的第一步是什么？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_12.png",
+    "gold_page": "ADAS--20241202-v3.3_page_12.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_12.png"
+    ],
+    "gold_answer": "第一步是找到车辆加速踏板并测试怠速状态电压。",
+    "acceptable_answers": [
+      "第一步找到车辆加速踏板并测试怠速状态电压。",
+      "先找加速踏板，再测怠速电压。"
+    ],
+    "question_type": "process_steps",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "加速踏板",
+      "怠速"
+    ],
+    "required_keypoints": [
+      "找到车辆加速踏板",
+      "测试怠速状态电压"
+    ],
+    "optional_keypoints": [
+      "第一步"
+    ],
+    "answer_type": "process_steps"
+  },
+  {
+    "id": 42,
+    "question": "踩下油门踏板时油门信号线电压会如何变化？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_12.png",
+    "gold_page": "ADAS--20241202-v3.3_page_12.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_12.png"
+    ],
+    "gold_answer": "踩下油门踏板时该线电压会由小变大或由大变小。",
+    "acceptable_answers": [
+      "踩下油门踏板时，油门信号线电压会由小变大或由大变小。",
+      "踩油门后该线电压可能上升也可能下降。"
+    ],
+    "question_type": "text_comprehension",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "电压变化"
+    ],
+    "required_keypoints": [
+      "油门踏板",
+      "电压",
+      "由小变大",
+      "由大变小"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "text_comprehension"
+  },
+  {
+    "id": 43,
+    "question": "车辆加速踏板接头通常有几根线？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_12.png",
+    "gold_page": "ADAS--20241202-v3.3_page_12.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_12.png"
+    ],
+    "gold_answer": "通常有4根线。",
+    "acceptable_answers": [
+      "车辆加速踏板接头通常有4根线。",
+      "通常是4根线。"
+    ],
+    "question_type": "visual_ocr",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "4根线"
+    ],
+    "required_keypoints": [
+      "加速踏板接头",
+      "4根线"
+    ],
+    "optional_keypoints": [
+      "正负极供电",
+      "2根油门信号线"
+    ],
+    "answer_type": "number"
+  },
+  {
+    "id": 44,
+    "question": "测试怠速电压时车辆应处于什么状态？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_12.png",
+    "gold_page": "ADAS--20241202-v3.3_page_12.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_12.png"
+    ],
+    "gold_answer": "车辆应处于开启且静止不动状态。",
+    "acceptable_answers": [
+      "测试怠速电压时车辆应开启且静止不动。",
+      "车辆处于开启且不动状态。"
+    ],
+    "question_type": "text_comprehension",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "静止"
+    ],
+    "required_keypoints": [
+      "车辆",
+      "开启",
+      "静止不动"
+    ],
+    "optional_keypoints": [
+      "怠速电压"
+    ],
+    "answer_type": "text_comprehension"
+  },
+  {
+    "id": 45,
+    "question": "调节金属拨片时需要使用什么工具？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_12.png",
+    "gold_page": "ADAS--20241202-v3.3_page_12.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_12.png",
+      "ADAS--20241202-v3.3_page_14.png"
+    ],
+    "gold_answer": "需要使用一字螺丝刀。",
+    "acceptable_answers": [
+      "需要使用一字螺丝刀。",
+      "调节金属拨片用一字螺丝刀。"
+    ],
+    "question_type": "visual_ocr",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "一字螺丝刀"
+    ],
+    "required_keypoints": [
+      "一字螺丝刀"
+    ],
+    "optional_keypoints": [
+      "金属拨片"
+    ],
+    "answer_type": "entity_list"
+  },
+  {
+    "id": 46,
+    "question": "黄色线在电子油门限速中起什么作用？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_13.png",
+    "gold_page": "ADAS--20241202-v3.3_page_13.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_13.png"
+    ],
+    "gold_answer": "黄色线接信号线加速踏板一端。",
+    "acceptable_answers": [
+      "黄色线接信号线加速踏板一端。",
+      "黄线连接油门信号线的加速踏板一端。"
+    ],
+    "question_type": "table_understanding",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "黄色线"
+    ],
+    "required_keypoints": [
+      "黄色线",
+      "接信号线加速踏板一端"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "table_understanding"
+  },
+  {
+    "id": 47,
+    "question": "绿色线在电子油门限速中起什么作用？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_13.png",
+    "gold_page": "ADAS--20241202-v3.3_page_13.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_13.png",
+      "ADAS--20241202-v3.3_page_14.png"
+    ],
+    "gold_answer": "绿色线为电位输出线，接信号线控制器一端。",
+    "acceptable_answers": [
+      "绿色线是电位输出线，接信号线控制器一端。",
+      "绿线接油门信号线控制器一端。"
+    ],
+    "question_type": "table_understanding",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "绿色线"
+    ],
+    "required_keypoints": [
+      "绿色线",
+      "电位输出线",
+      "接信号线控制器一端"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "table_understanding"
+  },
+  {
+    "id": 48,
+    "question": "紫色线应该接到哪里？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_13.png",
+    "gold_page": "ADAS--20241202-v3.3_page_13.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_10.png",
+      "ADAS--20241202-v3.3_page_13.png",
+      "ADAS--20241202-v3.3_page_14.png"
+    ],
+    "gold_answer": "紫色线用于采集油门电压，应接油门供电正极。",
+    "acceptable_answers": [
+      "紫色线采集油门电压，接油门供电正极。",
+      "紫线接油门供电正极，用于采集油门电压。"
+    ],
+    "question_type": "table_understanding",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "紫色线"
+    ],
+    "required_keypoints": [
+      "紫色线",
+      "采集油门电压",
+      "油门供电正极"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "table_understanding"
+  },
+  {
+    "id": 49,
+    "question": "灰色线应该接到哪里？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_13.png",
+    "gold_page": "ADAS--20241202-v3.3_page_13.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_10.png",
+      "ADAS--20241202-v3.3_page_13.png",
+      "ADAS--20241202-v3.3_page_14.png"
+    ],
+    "gold_answer": "灰色线用于采集油门电压，应接油门供电负极。",
+    "acceptable_answers": [
+      "灰色线采集油门电压，接油门供电负极。",
+      "灰线接油门供电负极，用于采集油门电压。"
+    ],
+    "question_type": "table_understanding",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "灰色线"
+    ],
+    "required_keypoints": [
+      "灰色线",
+      "采集油门电压",
+      "油门供电负极"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "table_understanding"
+  },
+  {
+    "id": 50,
+    "question": "黄色线和绿色线在使用时必须满足什么条件？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_13.png",
+    "gold_page": "ADAS--20241202-v3.3_page_13.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_13.png"
+    ],
+    "gold_answer": "黄色线和绿色线必须接到同一根油门信号线上。",
+    "acceptable_answers": [
+      "黄线和绿线必须接到同一根油门信号线上。",
+      "黄色线与绿色线作为一组时需接同一根油门信号线。"
+    ],
+    "question_type": "text_comprehension",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "同一根"
+    ],
+    "required_keypoints": [
+      "黄色线和绿色线",
+      "同一根油门信号线"
+    ],
+    "optional_keypoints": [
+      "一组控制线"
+    ],
+    "answer_type": "text_comprehension"
+  },
+  {
+    "id": 51,
+    "question": "棕色线和白色线在使用时必须满足什么条件？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_13.png",
+    "gold_page": "ADAS--20241202-v3.3_page_13.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_13.png"
+    ],
+    "gold_answer": "棕色线和白色线也必须接到同一根油门信号线上。",
+    "acceptable_answers": [
+      "棕线和白线也必须接到同一根油门信号线上。",
+      "棕色线与白色线作为一组时需接同一根油门信号线。"
+    ],
+    "question_type": "text_comprehension",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "同一根"
+    ],
+    "required_keypoints": [
+      "棕色线和白色线",
+      "同一根油门信号线"
+    ],
+    "optional_keypoints": [
+      "一组控制线"
+    ],
+    "answer_type": "text_comprehension"
+  },
+  {
+    "id": 52,
+    "question": "调整开关信号盒电压前需要准备哪些工具？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_14.png",
+    "gold_page": "ADAS--20241202-v3.3_page_14.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_12.png",
+      "ADAS--20241202-v3.3_page_14.png"
+    ],
+    "gold_answer": "需要准备小一字螺丝刀和万用表。",
+    "acceptable_answers": [
+      "需要准备小一字螺丝刀和万用表。",
+      "工具包括小一字螺丝刀、万用表。"
+    ],
+    "question_type": "process_steps",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "万用表"
+    ],
+    "required_keypoints": [
+      "小一字螺丝刀",
+      "万用表"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "entity_list"
+  },
+  {
+    "id": 53,
+    "question": "万用表正极应测量哪些点位？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_14.png",
+    "gold_page": "ADAS--20241202-v3.3_page_14.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_14.png"
+    ],
+    "gold_answer": "万用表正极测量绿色COM OUT1或白色OUT2。",
+    "acceptable_answers": [
+      "万用表正极测绿色COM OUT1或白色OUT2。",
+      "正极接/测绿色COM OUT1或白色OUT2。"
+    ],
+    "question_type": "process_steps",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "COM OUT1",
+      "OUT2"
+    ],
+    "required_keypoints": [
+      "万用表正极",
+      "绿色COM OUT1",
+      "白色OUT2"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "visual_relation"
+  },
+  {
+    "id": 54,
+    "question": "万用表负极可以搭载到哪里？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_14.png",
+    "gold_page": "ADAS--20241202-v3.3_page_14.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_14.png"
+    ],
+    "gold_answer": "万用表负极可以搭载到主机GPS/4G/WIFI任意端子上。",
+    "acceptable_answers": [
+      "万用表负极可搭在主机GPS/4G/WIFI任意端子上。",
+      "负极接主机GPS、4G或WIFI任意端子。"
+    ],
+    "question_type": "process_steps",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "GPS",
+      "4G",
+      "WIFI"
+    ],
+    "required_keypoints": [
+      "万用表负极",
+      "GPS/4G/WIFI任意端子"
+    ],
+    "optional_keypoints": [
+      "主机"
+    ],
+    "answer_type": "visual_relation"
+  },
+  {
+    "id": 55,
+    "question": "单独绿线的电压可调范围是多少？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_14.png",
+    "gold_page": "ADAS--20241202-v3.3_page_14.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_14.png"
+    ],
+    "gold_answer": "单独绿线电压可调范围为0-5V。",
+    "acceptable_answers": [
+      "单独绿线电压可调范围是0-5V。",
+      "绿线单独可调0到5V。"
+    ],
+    "question_type": "visual_ocr",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "0-5V"
+    ],
+    "required_keypoints": [
+      "单独绿线",
+      "0-5V"
+    ],
+    "optional_keypoints": [
+      "可调范围"
+    ],
+    "answer_type": "number"
+  },
+  {
+    "id": 56,
+    "question": "紫灰线外接80V后，白线和绿线的可调电压范围是多少？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_14.png",
+    "gold_page": "ADAS--20241202-v3.3_page_14.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_10.png",
+      "ADAS--20241202-v3.3_page_14.png"
+    ],
+    "gold_answer": "白线和绿线的可调电压范围可达到0-80V。",
+    "acceptable_answers": [
+      "紫灰线外接最高80V后，白线和绿线可调范围为0-80V。",
+      "外接紫灰线对应电压后，白线和绿线皆可调0-80V。"
+    ],
+    "question_type": "multi_hop_reasoning",
+    "difficulty": "hard",
+    "evidence_keywords": [
+      "80V"
+    ],
+    "required_keypoints": [
+      "紫灰线外接最高80V",
+      "白线和绿线",
+      "0-80V"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "multi_hop_reasoning"
+  },
+  {
+    "id": 57,
+    "question": "后摄像头在车辆前进时是否起作用？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_15.png",
+    "gold_page": "ADAS--20241202-v3.3_page_15.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_15.png"
+    ],
+    "gold_answer": "后摄像头在车辆前进时不起作用。",
+    "acceptable_answers": [
+      "后摄像头在车辆前进时无作用。",
+      "车辆前进时后摄像头不起作用。"
+    ],
+    "question_type": "text_comprehension",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "前进"
+    ],
+    "required_keypoints": [
+      "后摄像头",
+      "车辆前进时",
+      "无作用"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "yes_no"
+  },
+  {
+    "id": 58,
+    "question": "后摄像头在车辆后退时具有什么作用？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_15.png",
+    "gold_page": "ADAS--20241202-v3.3_page_15.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_15.png"
+    ],
+    "gold_answer": "车辆后退时后摄像头起告警及限速作用。",
+    "acceptable_answers": [
+      "车辆后退时后摄像头起告警和限速作用。",
+      "后退时后摄像头会进行告警及限速。"
+    ],
+    "question_type": "text_comprehension",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "后退",
+      "限速"
+    ],
+    "required_keypoints": [
+      "车辆后退时",
+      "后摄像头",
+      "告警及限速作用"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "text_comprehension"
+  },
+  {
+    "id": 59,
+    "question": "倒车切换通过什么信号接入红黑线束？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_15.png",
+    "gold_page": "ADAS--20241202-v3.3_page_15.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_15.png",
+      "ADAS--20241202-v3.3_page_16.png"
+    ],
+    "gold_answer": "通过倒车灯、倒车喇叭或倒车档位信号接入红黑线束。",
+    "acceptable_answers": [
+      "通过倒车灯、倒车喇叭或倒车档位信号接入红黑线束。",
+      "倒车信号可来自倒车灯、倒车喇叭、倒车档位。"
+    ],
+    "question_type": "visual_relation",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "倒车灯"
+    ],
+    "required_keypoints": [
+      "倒车灯",
+      "倒车喇叭",
+      "倒车档位",
+      "红黑线束"
+    ],
+    "optional_keypoints": [
+      "倒车信号"
+    ],
+    "answer_type": "entity_list"
+  },
+  {
+    "id": 60,
+    "question": "倒车信号接入前为什么要测量电压？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_15.png",
+    "gold_page": "ADAS--20241202-v3.3_page_15.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_15.png",
+      "ADAS--20241202-v3.3_page_16.png"
+    ],
+    "gold_answer": "因为接入电压不得高于5V。",
+    "acceptable_answers": [
+      "因为接入电压不得高于5V。",
+      "接入前需确认电压不超过5V。"
+    ],
+    "question_type": "multi_hop_reasoning",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "5V"
+    ],
+    "required_keypoints": [
+      "接入电压",
+      "不得高于5V"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "multi_hop_reasoning"
+  },
+  {
+    "id": 61,
+    "question": "如果接入电压高于5V应该如何处理？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_15.png",
+    "gold_page": "ADAS--20241202-v3.3_page_15.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_15.png",
+      "ADAS--20241202-v3.3_page_16.png"
+    ],
+    "gold_answer": "如果高于5V，需要通过继电器接入。",
+    "acceptable_answers": [
+      "若高于5V，需要通过继电器接入。",
+      "电压超过5V时要加继电器接入。"
+    ],
+    "question_type": "text_comprehension",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "继电器"
+    ],
+    "required_keypoints": [
+      "高于5V",
+      "通过继电器接入"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "text_comprehension"
+  },
+  {
+    "id": 62,
+    "question": "触发倒车检测功能需要检测到什么电压？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_16.png",
+    "gold_page": "ADAS--20241202-v3.3_page_16.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_15.png",
+      "ADAS--20241202-v3.3_page_16.png"
+    ],
+    "gold_answer": "需要检测到5V线上的电压。",
+    "acceptable_answers": [
+      "触发倒车检测需要检测到5V线上的电压。",
+      "需要开关盒倒车信号线检测到5V电压。"
+    ],
+    "question_type": "visual_ocr",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "5V"
+    ],
+    "required_keypoints": [
+      "倒车信号线",
+      "检测到5V线上的电压"
+    ],
+    "optional_keypoints": [
+      "主机触发倒车检测功能"
+    ],
+    "answer_type": "number"
+  },
+  {
+    "id": 63,
+    "question": "选择中间继电器时需要依据什么参数？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_16.png",
+    "gold_page": "ADAS--20241202-v3.3_page_16.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_3.png",
+      "ADAS--20241202-v3.3_page_16.png"
+    ],
+    "gold_answer": "需要依据车辆倒车信号供电电压选择对应继电器。",
+    "acceptable_answers": [
+      "根据车辆倒车信号供电电压选择对应继电器。",
+      "按倒车信号供电电压选择中间继电器。"
+    ],
+    "question_type": "text_comprehension",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "供电电压"
+    ],
+    "required_keypoints": [
+      "车辆倒车信号供电电压",
+      "对应继电器"
+    ],
+    "optional_keypoints": [
+      "中间继电器"
+    ],
+    "answer_type": "text_comprehension"
+  },
+  {
+    "id": 64,
+    "question": "如果倒车灯电压是DC12V，应选用什么继电器？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_16.png",
+    "gold_page": "ADAS--20241202-v3.3_page_16.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_16.png"
+    ],
+    "gold_answer": "应选用线圈电压为DC12V的继电器。",
+    "acceptable_answers": [
+      "倒车灯为DC12V时选线圈电压DC12V的继电器。",
+      "应选择DC12V线圈电压继电器。"
+    ],
+    "question_type": "multi_hop_reasoning",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "DC12V"
+    ],
+    "required_keypoints": [
+      "倒车灯",
+      "DC12V",
+      "继电器",
+      "线圈电压"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "multi_hop_reasoning"
+  },
+  {
+    "id": 65,
+    "question": "车辆倒车蜂鸣器供电电压应接到继电器哪里？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_16.png",
+    "gold_page": "ADAS--20241202-v3.3_page_16.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_16.png"
+    ],
+    "gold_answer": "应接到继电器线圈。",
+    "acceptable_answers": [
+      "车辆倒车蜂鸣器供电电压接到继电器线圈。",
+      "倒车蜂鸣器供电电压应接继电器线圈。"
+    ],
+    "question_type": "visual_relation",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "继电器线圈"
+    ],
+    "required_keypoints": [
+      "倒车蜂鸣器供电电压",
+      "继电器线圈"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "visual_relation"
+  },
+  {
+    "id": 66,
+    "question": "开关信号盒倒车信号线连接到继电器哪些触点？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_16.png",
+    "gold_page": "ADAS--20241202-v3.3_page_16.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_15.png",
+      "ADAS--20241202-v3.3_page_16.png"
+    ],
+    "gold_answer": "连接到继电器的常开点和公共点。",
+    "acceptable_answers": [
+      "信号开关盒倒车信号线接继电器常开点和公共点。",
+      "连接到继电器的常开点与公共点。"
+    ],
+    "question_type": "visual_relation",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "常开点",
+      "公共点"
+    ],
+    "required_keypoints": [
+      "倒车信号线",
+      "常开点",
+      "公共点"
+    ],
+    "optional_keypoints": [
+      "继电器"
+    ],
+    "answer_type": "visual_relation"
+  },
+  {
+    "id": 67,
+    "question": "倒车触发后继电器状态会如何变化？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_16.png",
+    "gold_page": "ADAS--20241202-v3.3_page_16.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_16.png"
+    ],
+    "gold_answer": "继电器会由常开变为常闭。",
+    "acceptable_answers": [
+      "倒车触发后继电器由常开变常闭。",
+      "触发倒车后常开继电器变为常闭。"
+    ],
+    "question_type": "process_steps",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "常开",
+      "常闭"
+    ],
+    "required_keypoints": [
+      "倒车触发后",
+      "继电器",
+      "常开",
+      "常闭"
+    ],
+    "optional_keypoints": [
+      "红黑短接"
+    ],
+    "answer_type": "process_steps"
+  },
+  {
+    "id": 68,
+    "question": "限速框调整时第一步需要准备什么设备？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_17.png",
+    "gold_page": "ADAS--20241202-v3.3_page_17.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_17.png"
+    ],
+    "gold_answer": "需要准备鼠标并插入主机USB接口。",
+    "acceptable_answers": [
+      "限速框调整第一步准备鼠标并插入主机USB接口。",
+      "先准备鼠标，接到主机USB接口。"
+    ],
+    "question_type": "process_steps",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "鼠标",
+      "USB"
+    ],
+    "required_keypoints": [
+      "准备鼠标",
+      "插入主机USB接口"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "process_steps"
+  },
+  {
+    "id": 69,
+    "question": "系统设置默认密码是多少？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_17.png",
+    "gold_page": "ADAS--20241202-v3.3_page_17.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_17.png"
+    ],
+    "gold_answer": "系统默认密码为123456。",
+    "acceptable_answers": [
+      "系统默认密码是123456。",
+      "默认系统密码为123456。"
+    ],
+    "question_type": "visual_ocr",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "123456"
+    ],
+    "required_keypoints": [
+      "默认密码",
+      "123456"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "number"
+  },
+  {
+    "id": 70,
+    "question": "调整告警范围时应该先调整哪个框？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_17.png",
+    "gold_page": "ADAS--20241202-v3.3_page_17.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_17.png"
+    ],
+    "gold_answer": "应先调整蓝框。",
+    "acceptable_answers": [
+      "应先调整蓝框。",
+      "调整告警范围时先拖动蓝框。"
+    ],
+    "question_type": "process_steps",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "蓝框"
+    ],
+    "required_keypoints": [
+      "先调整蓝框"
+    ],
+    "optional_keypoints": [
+      "告警范围"
+    ],
+    "answer_type": "process_steps"
+  },
+  {
+    "id": 71,
+    "question": "调整黄框前需要执行什么操作？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_17.png",
+    "gold_page": "ADAS--20241202-v3.3_page_17.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_17.png"
+    ],
+    "gold_answer": "需要点击下一步后再调整黄框。",
+    "acceptable_answers": [
+      "点击下一步后调整黄框。",
+      "调整黄框前需要点击下一步。"
+    ],
+    "question_type": "process_steps",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "下一步",
+      "黄框"
+    ],
+    "required_keypoints": [
+      "点击下一步",
+      "调整黄框"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "process_steps"
+  },
+  {
+    "id": 72,
+    "question": "调整完成后最后需要执行什么操作？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_17.png",
+    "gold_page": "ADAS--20241202-v3.3_page_17.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_17.png"
+    ],
+    "gold_answer": "最后需要点击保存。",
+    "acceptable_answers": [
+      "最后点击保存。",
+      "调整完成后需要保存。"
+    ],
+    "question_type": "process_steps",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "保存"
+    ],
+    "required_keypoints": [
+      "点击保存"
+    ],
+    "optional_keypoints": [
+      "调整完成后"
+    ],
+    "answer_type": "process_steps"
+  },
+  {
+    "id": 73,
+    "question": "如何判断设备已经联网成功？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_17.png",
+    "gold_page": "ADAS--20241202-v3.3_page_17.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_17.png"
+    ],
+    "gold_answer": "返回首页后地球图标显示为绿色即表示联网成功。",
+    "acceptable_answers": [
+      "返回首页后地球图标为绿色表示联网成功。",
+      "地球图标显示绿色即联网成功。"
+    ],
+    "question_type": "visual_relation",
+    "difficulty": "medium",
+    "evidence_keywords": [
+      "地球",
+      "绿色"
+    ],
+    "required_keypoints": [
+      "返回首页",
+      "地球图标",
+      "绿色",
+      "联网成功"
+    ],
+    "optional_keypoints": [],
+    "answer_type": "visual_relation"
+  },
+  {
+    "id": 74,
+    "question": "官方建议音量调节到多少以内？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_17.png",
+    "gold_page": "ADAS--20241202-v3.3_page_17.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_17.png"
+    ],
+    "gold_answer": "官方建议音量调整到70以内。",
+    "acceptable_answers": [
+      "官方建议音量调整到70以内。",
+      "建议音量不超过70。"
+    ],
+    "question_type": "text_comprehension",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "70"
+    ],
+    "required_keypoints": [
+      "音量",
+      "70以内"
+    ],
+    "optional_keypoints": [
+      "官方建议"
+    ],
+    "answer_type": "number"
+  },
+  {
+    "id": 75,
+    "question": "爱动超越人工智能的官网网址是什么？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_18.png",
+    "gold_page": "ADAS--20241202-v3.3_page_18.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_18.png"
+    ],
+    "gold_answer": "官网网址为https://www.aidong-ai.com。",
+    "acceptable_answers": [
+      "官网网址是https://www.aidong-ai.com。",
+      "公司官网为https://www.aidong-ai.com。"
+    ],
+    "question_type": "visual_ocr",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "官网"
+    ],
+    "required_keypoints": [
+      "https://www.aidong-ai.com"
+    ],
+    "optional_keypoints": [
+      "官网网址"
+    ],
+    "answer_type": "visual_ocr"
+  },
+  {
+    "id": 76,
+    "question": "爱动超越人工智能的400服务热线是多少？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_18.png",
+    "gold_page": "ADAS--20241202-v3.3_page_18.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_18.png"
+    ],
+    "gold_answer": "400服务热线为400-0230-400。",
+    "acceptable_answers": [
+      "400服务热线是400-0230-400。",
+      "全国统一服务电话为400-0230-400。"
+    ],
+    "question_type": "visual_ocr",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "400-0230-400"
+    ],
+    "required_keypoints": [
+      "400-0230-400"
+    ],
+    "optional_keypoints": [
+      "400服务热线"
+    ],
+    "answer_type": "visual_ocr"
+  },
+  {
+    "id": 77,
+    "question": "手册封底给出的业务邮箱是什么？",
+    "primary_gold_page": "ADAS--20241202-v3.3_page_18.png",
+    "gold_page": "ADAS--20241202-v3.3_page_18.png",
+    "gold_pages": [
+      "ADAS--20241202-v3.3_page_18.png"
+    ],
+    "gold_answer": "业务邮箱为bd@aidong.ai。",
+    "acceptable_answers": [
+      "业务邮箱是bd@aidong.ai。",
+      "封底邮箱为bd@aidong.ai。"
+    ],
+    "question_type": "visual_ocr",
+    "difficulty": "easy",
+    "evidence_keywords": [
+      "bd@aidong.ai"
+    ],
+    "required_keypoints": [
+      "bd@aidong.ai"
+    ],
+    "optional_keypoints": [
+      "业务邮箱"
+    ],
+    "answer_type": "visual_ocr"
+  }
+]

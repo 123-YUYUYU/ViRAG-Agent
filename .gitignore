@@ -1,0 +1,18 @@
+# Ignore Python bytecode files and IDE/editor specific files
+__pycache__
+.vscode
+.idea
+.claude
+.DS_Store
+.env
+.env.*
+!.env.example
+# Ignore directories
+/data/
+cache
+logs
+outputs
+bigcode-evaluation-harness
+examples
+tests
+
