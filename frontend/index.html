@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ViRAG-Agent | Industrial Visual-RAG Console</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <svg class="svg-sprite" aria-hidden="true">
+      <symbol id="icon-workspace" viewBox="0 0 24 24">
+        <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v9A2.5 2.5 0 0 1 17.5 17H9l-5 4v-4.5A2.5 2.5 0 0 1 2 14V5.5Z" />
+      </symbol>
+      <symbol id="icon-evidence" viewBox="0 0 24 24">
+        <path d="M7 3h7l4 4v14H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" />
+        <path d="M14 3v5h5M8 12h8M8 16h6" />
+      </symbol>
+      <symbol id="icon-workflow" viewBox="0 0 24 24">
+        <path d="M6 7h5a3 3 0 0 1 3 3v4a3 3 0 0 0 3 3h1" />
+        <path d="M6 7l3-3M6 7l3 3M18 17l-3-3M18 17l-3 3" />
+      </symbol>
+      <symbol id="icon-memory" viewBox="0 0 24 24">
+        <path d="M5 7c0-2.2 3.1-4 7-4s7 1.8 7 4-3.1 4-7 4-7-1.8-7-4Z" />
+        <path d="M5 7v5c0 2.2 3.1 4 7 4s7-1.8 7-4V7" />
+        <path d="M5 12v5c0 2.2 3.1 4 7 4s7-1.8 7-4v-5" />
+      </symbol>
+      <symbol id="icon-settings" viewBox="0 0 24 24">
+        <path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z" />
+        <path d="M19.4 15a8.1 8.1 0 0 0 .1-2l2-1.5-2-3.5-2.4 1a8.4 8.4 0 0 0-1.7-1L15 5.5h-4L10.6 8a8.4 8.4 0 0 0-1.7 1L6.5 8l-2 3.5 2 1.5a8.1 8.1 0 0 0 .1 2l-2.1 1.5 2 3.5 2.4-1a8.4 8.4 0 0 0 1.7 1l.4 2.5h4l.4-2.5a8.4 8.4 0 0 0 1.7-1l2.4 1 2-3.5L19.4 15Z" />
+      </symbol>
+      <symbol id="icon-book" viewBox="0 0 24 24">
+        <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21V5.5Z" />
+        <path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20M8 7h7M8 10h5" />
+      </symbol>
+      <symbol id="icon-server" viewBox="0 0 24 24">
+        <path d="M5 4h14a2 2 0 0 1 2 2v4H3V6a2 2 0 0 1 2-2ZM3 14h18v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4Z" />
+        <path d="M7 7h.01M7 17h.01M11 7h6M11 17h6" />
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <path d="m5 12 4 4L19 6" />
+      </symbol>
+      <symbol id="icon-cpu" viewBox="0 0 24 24">
+        <rect x="7" y="7" width="10" height="10" rx="2" />
+        <path d="M10 1v4M14 1v4M10 19v4M14 19v4M1 10h4M1 14h4M19 10h4M19 14h4" />
+      </symbol>
+      <symbol id="icon-database" viewBox="0 0 24 24">
+        <path d="M4 6c0-2 3.6-3.5 8-3.5S20 4 20 6s-3.6 3.5-8 3.5S4 8 4 6Z" />
+        <path d="M4 6v6c0 2 3.6 3.5 8 3.5s8-1.5 8-3.5V6M4 12v6c0 2 3.6 3.5 8 3.5s8-1.5 8-3.5v-6" />
+      </symbol>
+      <symbol id="icon-search" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="7" />
+        <path d="m16.5 16.5 4 4" />
+      </symbol>
+      <symbol id="icon-image" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="14" rx="2" />
+        <path d="m4 16 5-5 4 4 2-2 5 5M8 9h.01" />
+      </symbol>
+      <symbol id="icon-send" viewBox="0 0 24 24">
+        <path d="M22 2 11 13" />
+        <path d="m22 2-7 20-4-9-9-4 20-7Z" />
+      </symbol>
+      <symbol id="icon-upload" viewBox="0 0 24 24">
+        <path d="M12 16V3M7 8l5-5 5 5" />
+        <path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3" />
+      </symbol>
+      <symbol id="icon-bot" viewBox="0 0 24 24">
+        <rect x="5" y="8" width="14" height="11" rx="3" />
+        <path d="M12 8V4M9 4h6M9 13h.01M15 13h.01M10 17h4" />
+      </symbol>
+      <symbol id="icon-user" viewBox="0 0 24 24">
+        <circle cx="12" cy="8" r="4" />
+        <path d="M4 21a8 8 0 0 1 16 0" />
+      </symbol>
+      <symbol id="icon-info" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" />
+        <path d="M12 10v6M12 7h.01" />
+      </symbol>
+      <symbol id="icon-tag" viewBox="0 0 24 24">
+        <path d="M20 13 13 20a2 2 0 0 1-2.8 0L3 12.8V4h8.8L20 12.2a2 2 0 0 1 0 2.8Z" />
+        <path d="M7.5 7.5h.01" />
+      </symbol>
+      <symbol id="icon-layers" viewBox="0 0 24 24">
+        <path d="m12 3 9 5-9 5-9-5 9-5Z" />
+        <path d="m3 12 9 5 9-5M3 16l9 5 9-5" />
+      </symbol>
+      <symbol id="icon-route" viewBox="0 0 24 24">
+        <circle cx="6" cy="6" r="3" />
+        <circle cx="18" cy="18" r="3" />
+        <path d="M9 6h3a4 4 0 0 1 4 4v5" />
+      </symbol>
+      <symbol id="icon-zoom" viewBox="0 0 24 24">
+        <circle cx="10" cy="10" r="6" />
+        <path d="m15 15 6 6M10 7v6M7 10h6" />
+      </symbol>
+    </svg>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <div class="brand">
+          <div class="brand-mark">YUYUYU</div>
+          <div>
+            <p class="eyebrow">Industrial Visual-RAG</p>
+            <h1>ViRAG-Agent</h1>
+          </div>
+        </div>
+
+        <nav class="nav-card">
+          <a class="nav-item is-active" href="#workspace" data-nav="workspace">
+            <span class="nav-icon"><svg class="ui-icon"><use href="#icon-workspace"></use></svg></span>
+            <span>Workspace</span>
+          </a>
+          <a class="nav-item" href="#evidence" data-nav="evidence">
+            <span class="nav-icon"><svg class="ui-icon"><use href="#icon-evidence"></use></svg></span>
+            <span>Evidence</span>
+          </a>
+          <a class="nav-item" href="#pipeline" data-nav="pipeline">
+            <span class="nav-icon"><svg class="ui-icon"><use href="#icon-workflow"></use></svg></span>
+            <span>Workflow</span>
+          </a>
+          <a class="nav-item" href="#memory" data-nav="memory">
+            <span class="nav-icon"><svg class="ui-icon"><use href="#icon-memory"></use></svg></span>
+            <span>Memory</span>
+          </a>
+          <a class="nav-item" href="#settings" data-nav="settings">
+            <span class="nav-icon"><svg class="ui-icon"><use href="#icon-settings"></use></svg></span>
+            <span>Settings</span>
+          </a>
+        </nav>
+
+        <div class="side-panel">
+          <p class="panel-label"><svg class="ui-icon"><use href="#icon-book"></use></svg>Manual Corpus</p>
+          <strong>Industrial Vehicle Technical Manual Corpus</strong>
+          <span>Wiring diagrams, harness color tables, connector labels, parameter sheets, and installation procedures.</span>
+        </div>
+
+        <div class="side-panel compact backend-panel">
+          <div class="backend-title">
+            <p class="panel-label"><svg class="ui-icon"><use href="#icon-server"></use></svg>Backend</p>
+            <span class="connected-pill"><svg class="ui-icon"><use href="#icon-check"></use></svg>Connected</span>
+          </div>
+          <strong><svg class="ui-icon inline-heading-icon"><use href="#icon-settings"></use></svg>Runtime Status</strong>
+          <div class="backend-lines">
+            <span><b><svg class="ui-icon"><use href="#icon-cpu"></use></svg>Model</b> Qwen3-VL / Qwen3-Max</span>
+            <span><b><svg class="ui-icon"><use href="#icon-database"></use></svg>Vector DB</b> ChromaDB visual index</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Multimodal Retrieval-Augmented QA for Industrial Documents</p>
+            <h2><svg class="ui-icon heading-icon"><use href="#icon-workspace"></use></svg>Industrial Manual Evidence Console</h2>
+          </div>
+          <div class="top-actions">
+            <span class="status-dot"></span>
+            <span>Local Session</span>
+            <button class="icon-button" type="button" aria-label="Open menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </header>
+
+        <section class="workspace-band" id="workspace">
+          <article class="conversation-panel">
+            <div class="conversation-header">
+              <div>
+                <p class="eyebrow">Conversation</p>
+                <h3><svg class="ui-icon heading-icon"><use href="#icon-bot"></use></svg>Industrial Vehicle Manual Assistant</h3>
+              </div>
+              <div class="session-tags">
+                <span>Visual-RAG</span>
+                <span>Memory Enabled</span>
+              </div>
+            </div>
+
+            <div class="chat-stack workspace-chat" id="chat-stack">
+              <div class="message system-message">
+                <span><svg class="ui-icon"><use href="#icon-info"></use></svg>System</span>
+                <p>
+                  The industrial vehicle manual corpus is loaded. Answers should be grounded in original page evidence, and recent retrieval context is retained for follow-up questions.
+                </p>
+              </div>
+              <div class="message user-message">
+                <span><svg class="ui-icon"><use href="#icon-user"></use></svg>User</span>
+                <p>How many wires are in the switch signal box, and what are their colors?</p>
+              </div>
+              <div class="message assistant-message">
+                <span><svg class="ui-icon"><use href="#icon-bot"></use></svg>ViRAG-Agent</span>
+                <p>
+                  This question should be answered by checking both the connector diagram and the harness color table. I will keep the retrieved page, matched region, and answer summary in session memory so later follow-up questions can reuse this context.
+                </p>
+                <div class="source-row">
+                  <mark><svg class="ui-icon"><use href="#icon-evidence"></use></svg>Manual_A.pdf p.14</mark>
+                  <mark><svg class="ui-icon"><use href="#icon-tag"></use></svg>Harness color table</mark>
+                  <mark><svg class="ui-icon"><use href="#icon-memory"></use></svg>Memory updated</mark>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <aside class="memory-panel" id="memory">
+            <div class="section-heading">
+              <p class="eyebrow">Session Memory</p>
+              <h3><svg class="ui-icon heading-icon"><use href="#icon-memory"></use></svg>Conversation Memory</h3>
+            </div>
+
+            <div class="memory-list">
+              <div class="memory-item">
+                <span><svg class="ui-icon"><use href="#icon-tag"></use></svg>Current Topic</span>
+                <strong>Switch signal box wiring and connector definition</strong>
+                <p>Used to resolve short follow-ups such as "this connector", "that wire", or "the previous page".</p>
+              </div>
+              <div class="memory-item">
+                <span><svg class="ui-icon"><use href="#icon-evidence"></use></svg>Recent Evidence</span>
+                <strong>Manual_A.pdf p.14, connector diagram</strong>
+                <p>Stores source page, local evidence region, and matched terms for continued inspection.</p>
+              </div>
+              <div class="memory-item">
+                <span><svg class="ui-icon"><use href="#icon-workspace"></use></svg>Conversation Summary</span>
+                <strong>The user is verifying industrial vehicle wiring details.</strong>
+                <p>Older turns can be compressed while preserving task intent and key evidence.</p>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="query-console" aria-label="Query console">
+          <div class="query-tabs" role="tablist" aria-label="Query type">
+            <button class="query-tab is-active" type="button" data-tab="text" role="tab" aria-selected="true">
+              <svg class="ui-icon"><use href="#icon-search"></use></svg>Text Query
+            </button>
+            <button class="query-tab" type="button" data-tab="visual" role="tab" aria-selected="false">
+              <svg class="ui-icon"><use href="#icon-image"></use></svg>Visual Query
+            </button>
+          </div>
+
+          <div class="query-panel is-active" data-panel="text">
+            <label for="manual-query"><svg class="ui-icon"><use href="#icon-search"></use></svg>Ask a question about the manual</label>
+            <div class="input-row">
+              <input
+                id="manual-query"
+                type="text"
+                value="How many wires are in the switch signal box, and what are their colors?"
+                autocomplete="off"
+              />
+              <button class="primary-button" type="button" id="submit-query"><svg class="ui-icon"><use href="#icon-send"></use></svg>Submit Query</button>
+            </div>
+          </div>
+
+          <div class="query-panel" data-panel="visual">
+            <label for="visual-query"><svg class="ui-icon"><use href="#icon-upload"></use></svg>Upload a manual page or cropped detail</label>
+            <div class="upload-row">
+              <input id="visual-query" type="file" accept="image/*,.pdf" />
+              <button class="secondary-button" type="button"><svg class="ui-icon"><use href="#icon-image"></use></svg>Parse Preview</button>
+            </div>
+          </div>
+
+          <div class="mode-row" aria-label="Retrieval modes">
+            <button class="mode-chip is-on" type="button"><svg class="ui-icon"><use href="#icon-route"></use></svg>Function Calling Routing</button>
+            <button class="mode-chip is-on" type="button"><svg class="ui-icon"><use href="#icon-search"></use></svg>CLIP + BM25 Recall</button>
+            <button class="mode-chip is-on" type="button"><svg class="ui-icon"><use href="#icon-layers"></use></svg>RRF Fusion</button>
+            <button class="mode-chip is-on" type="button"><svg class="ui-icon"><use href="#icon-check"></use></svg>BGE Reranker</button>
+            <button class="mode-chip" type="button"><svg class="ui-icon"><use href="#icon-zoom"></use></svg>Smart Zoom</button>
+            <button class="mode-chip is-on" type="button"><svg class="ui-icon"><use href="#icon-memory"></use></svg>Memory Context</button>
+          </div>
+        </section>
+
+        <section class="dashboard-grid" id="evidence">
+          <article class="evidence-list">
+            <div class="section-heading">
+              <p class="eyebrow">Retrieved Evidence</p>
+              <h3><svg class="ui-icon heading-icon"><use href="#icon-evidence"></use></svg>Candidate Pages</h3>
+            </div>
+
+            <div class="evidence-card is-selected">
+              <div class="page-thumb">
+                <span>14</span>
+              </div>
+              <div>
+                <strong><svg class="ui-icon inline-heading-icon"><use href="#icon-evidence"></use></svg>Connector terminals and color table</strong>
+                <p>Visual semantics match the wiring structure, while BM25 matches signal box and harness color terms.</p>
+                <div class="evidence-tags">
+                  <span><svg class="ui-icon"><use href="#icon-search"></use></svg>Multimodal recall</span>
+                  <span><svg class="ui-icon"><use href="#icon-check"></use></svg>Primary evidence</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="evidence-card">
+              <div class="page-thumb">
+                <span>22</span>
+              </div>
+              <div>
+                <strong><svg class="ui-icon inline-heading-icon"><use href="#icon-cpu"></use></svg>Vehicle host interface definition</strong>
+                <p>Similar connector numbering is preserved by RRF, then reviewed by semantic reranking.</p>
+                <div class="evidence-tags">
+                  <span><svg class="ui-icon"><use href="#icon-tag"></use></svg>Interface definition</span>
+                  <span><svg class="ui-icon"><use href="#icon-search"></use></svg>Needs review</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="evidence-card">
+              <div class="page-thumb">
+                <span>31</span>
+              </div>
+              <div>
+                <strong><svg class="ui-icon inline-heading-icon"><use href="#icon-workflow"></use></svg>Installation procedure detail</strong>
+                <p>The visual layout is similar, but the page does not contain the required color table.</p>
+                <div class="evidence-tags">
+                  <span><svg class="ui-icon"><use href="#icon-workflow"></use></svg>Procedure diagram</span>
+                  <span><svg class="ui-icon"><use href="#icon-evidence"></use></svg>Secondary evidence</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="capability-matrix">
+            <div class="section-heading">
+              <p class="eyebrow">Capabilities</p>
+              <h3><svg class="ui-icon heading-icon"><use href="#icon-layers"></use></svg>System Capabilities</h3>
+            </div>
+
+            <div class="capability-grid">
+              <div class="capability-item">
+                <strong><svg class="ui-icon inline-heading-icon"><use href="#icon-layers"></use></svg>Fine-grained multimodal indexing</strong>
+                <p>Separates text blocks, rendered page images, and visual regions to preserve dense industrial drawing details.</p>
+              </div>
+              <div class="capability-item">
+                <strong><svg class="ui-icon inline-heading-icon"><use href="#icon-route"></use></svg>Dynamic retrieval workflow</strong>
+                <p>Uses Function Calling to decide whether a question needs expansion, visual search, zooming, or clarification.</p>
+              </div>
+              <div class="capability-item">
+                <strong><svg class="ui-icon inline-heading-icon"><use href="#icon-search"></use></svg>Multi-route recall and reranking</strong>
+                <p>Combines CLIP, BM25, RRF, and BGE Reranker to reduce mistakes caused by visually similar pages.</p>
+              </div>
+              <div class="capability-item">
+                <strong><svg class="ui-icon inline-heading-icon"><use href="#icon-check"></use></svg>Evidence-grounded answering</strong>
+                <p>Binds answers to source pages, evidence blocks, and key points so responses stay close to the manual.</p>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="pipeline-band" id="pipeline">
+          <div class="section-heading">
+            <p class="eyebrow">Workflow Trace</p>
+            <h3><svg class="ui-icon heading-icon"><use href="#icon-workflow"></use></svg>Retrieval-to-Answer Workflow</h3>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-step">
+              <span>01</span>
+              <strong><svg class="ui-icon inline-heading-icon"><use href="#icon-search"></use></svg>Query Understanding</strong>
+              <p>Detects short queries, visual dependency, and domain types such as wiring, connectors, parameters, and procedures.</p>
+            </div>
+            <div class="timeline-step">
+              <span>02</span>
+              <strong><svg class="ui-icon inline-heading-icon"><use href="#icon-route"></use></svg>Tool Routing</strong>
+              <p>Function Calling selects controlled expansion, multimodal retrieval, Smart Zoom, or clarification.</p>
+            </div>
+            <div class="timeline-step">
+              <span>03</span>
+              <strong><svg class="ui-icon inline-heading-icon"><use href="#icon-layers"></use></svg>Hybrid Recall</strong>
+              <p>CLIP captures visual page semantics while BM25 adds term-level signals such as colors and terminal IDs.</p>
+            </div>
+            <div class="timeline-step">
+              <span>04</span>
+              <strong><svg class="ui-icon inline-heading-icon"><use href="#icon-check"></use></svg>RRF + BGE</strong>
+              <p>Fuses candidates and reranks them to handle similar tables, diagrams, and connector pages.</p>
+            </div>
+            <div class="timeline-step">
+              <span>05</span>
+              <strong><svg class="ui-icon inline-heading-icon"><use href="#icon-bot"></use></svg>Qwen-VL Answer</strong>
+              <p>Reads the final evidence page image and returns an answer with traceable source information.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="settings-panel" id="settings">
+          <div class="section-heading">
+            <p class="eyebrow">Tech Stack</p>
+            <h3><svg class="ui-icon heading-icon"><use href="#icon-settings"></use></svg>Project Stack</h3>
+          </div>
+          <div class="stack-row">
+            <span><svg class="ui-icon"><use href="#icon-cpu"></use></svg>PyTorch</span>
+            <span><svg class="ui-icon"><use href="#icon-cpu"></use></svg>Transformers</span>
+            <span><svg class="ui-icon"><use href="#icon-evidence"></use></svg>PyMuPDF</span>
+            <span><svg class="ui-icon"><use href="#icon-image"></use></svg>CLIP</span>
+            <span><svg class="ui-icon"><use href="#icon-database"></use></svg>ChromaDB</span>
+            <span><svg class="ui-icon"><use href="#icon-search"></use></svg>BM25</span>
+            <span><svg class="ui-icon"><use href="#icon-layers"></use></svg>RRF</span>
+            <span><svg class="ui-icon"><use href="#icon-check"></use></svg>BGE Reranker</span>
+            <span><svg class="ui-icon"><use href="#icon-route"></use></svg>Function Calling</span>
+            <span><svg class="ui-icon"><use href="#icon-bot"></use></svg>Qwen3-VL</span>
+            <span><svg class="ui-icon"><use href="#icon-bot"></use></svg>Qwen3-Max</span>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

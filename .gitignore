@@ -7,6 +7,7 @@ __pycache__
 .env
 .env.*
 !.env.example
+README_ch.md
 # Ignore directories
 /data/
 cache
