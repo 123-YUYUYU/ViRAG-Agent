@@ -4,6 +4,12 @@
 
 ![Frontend Preview](frontend/img/frontend_image.png)
 
+## Document Examples
+
+| Manual Page 1 | Manual Page 2 |
+| --- | --- |
+| ![Document Example 1](frontend/img/参考页面1.png) | ![Document Example 2](frontend/img/参考页面2.png) |
+
 ## Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
@@ -22,6 +28,7 @@
 ## Table of Contents
 
 - [ViRAG-Agent](#virag-agent)
+  - [Document Examples](#document-examples)
   - [Tech Stack](#tech-stack)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
