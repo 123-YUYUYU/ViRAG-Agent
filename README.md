@@ -43,6 +43,7 @@
     - [5. Open the Static Frontend Prototype](#5-open-the-static-frontend-prototype)
   - [Example Workflow](#example-workflow)
   - [Evaluation](#evaluation)
+  - [Benchmark Results](#benchmark-results)
   - [Configuration](#configuration)
   - [Use Cases](#use-cases)
   - [License](#license)
@@ -221,6 +222,25 @@ Choose a judging mode:
 python evaluation/run_benchmark.py --judge_mode local_llm
 python evaluation/run_benchmark.py --judge_mode rule
 ```
+
+## Benchmark Results
+
+The following results come from the current project benchmark evaluation.
+
+| Area | Metric | Result |
+| --- | --- | ---: |
+| Retrieval | Top-1 Retrieval Accuracy | 23.38% |
+| Retrieval | Retrieval Hit@K | 66.23% |
+| Reranking | Rerank Top-1 Hit | 62.34% |
+| Reranking | Rerank Hit@K | 62.34% |
+| Context | Final Context Hit | 62.34% |
+| Answer | Answer Exact Accuracy | 80.52% |
+| Answer | Weighted QA Accuracy | 81.17% |
+| Answer | Average QA Score | 82.10% |
+| Safety | Hallucination Rate | 1.30% |
+| Stability | Judge Conflict Rate | 0.00% |
+
+The results show that hybrid retrieval improves page-level recall, while reranking keeps the final context selection stable. With the rule-first keypoint evaluation strategy, the agent maintains answer and weighted QA accuracy above 80%, with a low hallucination rate.
 
 ## Configuration
 
