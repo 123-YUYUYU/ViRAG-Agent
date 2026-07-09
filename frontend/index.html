@@ -203,24 +203,36 @@
           <aside class="memory-panel" id="memory">
             <div class="section-heading">
               <p class="eyebrow">Session Memory</p>
-              <h3><svg class="ui-icon heading-icon"><use href="#icon-memory"></use></svg>Conversation Memory</h3>
+              <h3><svg class="ui-icon heading-icon"><use href="#icon-memory"></use></svg>Context Store</h3>
             </div>
 
             <div class="memory-list">
-              <div class="memory-item">
-                <span><svg class="ui-icon"><use href="#icon-tag"></use></svg>Current Topic</span>
-                <strong>Switch signal box wiring and connector definition</strong>
-                <p>Used to resolve short follow-ups such as "this connector", "that wire", or "the previous page".</p>
+              <div class="memory-record">
+                <div class="record-head">
+                  <span><svg class="ui-icon"><use href="#icon-workspace"></use></svg>Latest Message</span>
+                  <small>saved</small>
+                </div>
+                <p>User asked for the wire count and color mapping of the switch signal box in the industrial vehicle manual.</p>
               </div>
-              <div class="memory-item">
-                <span><svg class="ui-icon"><use href="#icon-evidence"></use></svg>Recent Evidence</span>
-                <strong>Manual_A.pdf p.14, connector diagram</strong>
-                <p>Stores source page, local evidence region, and matched terms for continued inspection.</p>
+              <div class="memory-record">
+                <div class="record-head">
+                  <span><svg class="ui-icon"><use href="#icon-evidence"></use></svg>History Summary</span>
+                  <small>turn 08</small>
+                </div>
+                <p>The session is focused on industrial vehicle wiring evidence. The active document context includes connector diagrams, harness color rows, and installation notes for grounded follow-up answers.</p>
               </div>
-              <div class="memory-item">
-                <span><svg class="ui-icon"><use href="#icon-workspace"></use></svg>Conversation Summary</span>
-                <strong>The user is verifying industrial vehicle wiring details.</strong>
-                <p>Older turns can be compressed while preserving task intent and key evidence.</p>
+              <div class="memory-record compression-record">
+                <div class="compression-meter" aria-label="Context compression threshold: 1 of 10 messages used">
+                  <div class="compression-ring">
+                    <strong>1/10</strong>
+                  </div>
+                </div>
+                <div>
+                  <div class="record-head">
+                    <span><svg class="ui-icon"><use href="#icon-memory"></use></svg>Context Compression</span>
+                    <small>9 left</small>
+                  </div>
+                </div>
               </div>
             </div>
           </aside>
