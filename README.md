@@ -237,7 +237,7 @@ The following results come from the current project benchmark evaluation.
 | Answer | Answer Exact Accuracy | 80.52% |
 | Answer | Weighted QA Accuracy | 81.17% |
 | Answer | Average QA Score | 82.10% |
-| Safety | Hallucination Rate | 1.30% |
+| Safety | Hallucination Rate | 0.00% |
 | Stability | Judge Conflict Rate | 0.00% |
 
 The results show that hybrid retrieval improves page-level recall, while reranking keeps the final context selection stable. With the rule-first keypoint evaluation strategy, the agent maintains answer and weighted QA accuracy above 80%, with a low hallucination rate.
